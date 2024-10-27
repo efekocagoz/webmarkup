@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background-color: rgba(23, 10, 28, 1);
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.background-section {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-section-1 {
+  background-image: url("../images/v2_250.png");
+  height: 500px;
+}
+
+.bg-section-2 {
+  background-image: url("../images/v2_251.png");
+  height: 500px;
+}
+
+.header-text {
+  font-size: 48px;
+  font-family: "Kanit", sans-serif;
+  font-weight: regular;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #170A1C;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+header nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+header .sign-up {
+  color: white;
+  background-color: #228CDB;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+header .sign-up:hover {
+  background-color: #0B7189;
+}
+
+.experience {
+  position: relative;
+  color: white;
+  height: 400px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.experience h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.experience p {
+  font-size: 16px;
+  padding: 20px;
+  height: 300px;
+  color: white;
+  line-height: 1.5;
+}
+
+.historical {
+  background-image: url(../images/couple.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.adventurous {
+  background-image: url(../images/adv.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.relaxation {
+  background-image: url(../images/relaxx.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.extras {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #C19AB7;
+  gap: 1rem;
+}
+
+.extras h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: 1px solid #9C95DC;
+  color: #333;
+}
+
+.subscribe-form input[type="submit"] {
+  background-color: #9C95DC;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.subscribe-form input[type="submit"]:hover {
+  background-color: #7B7AB3;
+}
+
+.section-heading {
+  font-size: 64px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Kanit", sans-serif;
+}
+
+.section-content {
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #170A1C;
+  color: white;
+  text-align: center;
+}
+
+footer .social-media a {
+  margin: 0 0.5rem;
+  color: #9C95DC;
+  text-decoration: none;
+}
+
+footer .social-media a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  header nav {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0; 
+    margin: 0; 
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .experience {
+    height: auto; 
+    margin: 5px;
+  }
+
+  .experience h2 {
+    font-size: 20px;
+  }
+
+  .experience p {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .section-heading {
+    font-size: 48px;
+  }
+
+  .section-content {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .extras {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subscribe-form input[type="email"],
+  .subscribe-form input[type="submit"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

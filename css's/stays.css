@@ -1,0 +1,243 @@
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #170A1C;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+header nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+header .sign-up {
+    color: white;
+    background-color: #228CDB;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+header .sign-up:hover {
+    background-color: #0B7189;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.luxurious-stays,
+.home-sharing,
+.hostels {
+    min-height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.luxurious-stays {
+    background-image: url(../images/hotels.png);
+}
+
+.home-sharing {
+    background-image: url(../images/airbnb.png);
+}
+
+.hostels {
+    background-image: url(../images/hostelsss.png);
+}
+
+.luxurious-stays::before,
+.home-sharing::before,
+.hostels::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.luxurious-stays h3,
+.home-sharing h3,
+.hostels h3 {
+    position: relative;
+    z-index: 2;
+}
+
+.accommodation-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.accommodation-intro {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+}
+
+h4 {
+    margin-top: 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #170A1C;
+    color: white;
+}
+
+footer .social-media {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .subscription {
+    margin: 1rem 0;
+}
+
+footer input[type="email"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+footer button {
+    background-color: #228CDB;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #0B7189;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        position: static;
+        transform: none;
+        margin-top: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    header .sign-up {
+        margin-top: 1rem;
+    }
+
+    .luxurious-stays,
+    .home-sharing,
+    .hostels {
+        padding: 15px;
+        min-height: 250px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    footer .subscription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer input[type="email"] {
+        width: 80%;
+        margin-bottom: 0.5rem;
+    }
+
+    footer button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 200px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    footer input[type="email"],
+    footer button {
+        width: 90%;
+    }
+}

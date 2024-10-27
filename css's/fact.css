@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.header-text {
+  font-size: 48px;
+  font-family: "Kanit", sans-serif;
+  font-weight: regular;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #170A1C;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+header nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+header .sign-up {
+  color: white;
+  background-color: #228CDB;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+header .sign-up:hover {
+  background-color: #0B7189;
+}
+.main {
+  padding: 2rem;
+}
+
+.facts-section {
+  margin: 20px 0;
+}
+
+.fact-card1, .fact-card2, .fact-card3, .fact-card4 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 19px;
+  padding: 15px;
+  margin: 10px 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.fact-card1 {
+  background-image: url(../images/border.png);
+}
+
+.fact-card2 {
+  background-image: url(../images/bird.png);
+}
+
+.fact-card3 {
+  background-image: url(../images/passport.png);
+}
+
+.fact-card4 {
+  background-image: url(../images/snowboard.png);
+}
+
+.fact-card1::before, .fact-card2::before, .fact-card3::before, .fact-card4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; 
+  filter: brightness(50%); 
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.fact-card1 p, .fact-card2 p, .fact-card3 p, .fact-card4 p {
+  position: relative;
+  z-index: 2;
+}
+
+.fact-text {
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+ 
+  color: black;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-contact, .footer-follow {
+  margin: 10px 0;
+}
+
+.social-media {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.social-media li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.subscription {
+  text-align: center;
+  padding: 20px;
+  background-color: #170A1C;
+  color: white;
+  margin-top: 20px;
+}
+
+.subscription-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subscription-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.subscription-button {
+  background-color: #9C95DC;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subscription-button:hover {
+  background-color: #228CDB;
+}
+
+.subscription-footer {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  header nav {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0; 
+    margin: 0; 
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .subscription-title {
+      font-size: 28px;
+  }
+
+  .subscription-button {
+      width: 100%;
+  }
+
+  .subscription-input {
+      width: 100%;
+  }
+}

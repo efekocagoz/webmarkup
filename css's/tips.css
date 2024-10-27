@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background-color: rgba(23, 10, 28, 1);
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.header-text {
+  font-size: 48px;
+  font-family: "Kanit", sans-serif;
+  font-weight: regular;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #170A1C;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+header nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+header .sign-up {
+  color: white;
+  background-color: #228CDB;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+header .sign-up:hover {
+  background-color: #0B7189;
+}
+
+.visa-image {
+  width: 40px; 
+  height: auto; 
+  vertical-align: middle; 
+  margin-left: 10px; 
+  display: inline-block; 
+}
+.back-pack {
+  width: 40px; 
+  height: auto; 
+  vertical-align: middle; 
+  margin-left: 10px; 
+  display: inline-block; 
+}
+
+.cult {
+  width: 40px; 
+  height: auto; 
+  vertical-align: middle; 
+  margin-left: 10px; 
+  display: inline-block; 
+}
+
+
+.budget {
+  width: 40px; 
+  height: auto; 
+  vertical-align: middle; 
+  margin-left: 10px; 
+  display: inline-block; 
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Kanit", sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+.tips {
+  background-color: rgba(25, 25, 25, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.tips h2 {
+  color: #C19AB7;
+  text-align: center;
+}
+
+.tips h3 {
+  margin-top: 15px;
+  color: #9C95DC;
+}
+
+.tips p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.subscription {
+  text-align: center;
+  margin: 20px 0;
+}
+
+input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+button {
+  background-color: #9C95DC;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #228CDB;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-image: url(../images/MAP.png);
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer .social-media {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+footer .social-media li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.subscription {
+  text-align: center;
+  padding: 20px;
+  background-color: #170A1C;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.subscription h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subscription button {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  header nav {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  input[type="email"] {
+    width: 100%;
+  }
+}

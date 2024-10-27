@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.logo {
+    display: block;
+    margin: 1rem auto;
+    max-width: 200px;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    height: 100vh;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-text {
+    font-size: 48px;
+    font-family: "Kanit", sans-serif;
+    font-weight: regular;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #170A1C;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+header nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+header .sign-up {
+    color: white;
+    background-color: #228CDB;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+header .sign-up:hover {
+    background-color: #0B7189;
+}
+
+.highlights {
+    padding: 2rem;
+    background-color: #9C95DC;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.highlight-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.highlight-wrapper figure {
+    margin: 0;
+    text-align: center;
+}
+
+.highlights img {
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.highlights figcaption {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.highlights p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .highlights {
+        padding: 1rem;
+    }
+
+    .highlights h2 {
+        font-size: 1.8rem;
+    }
+
+    .highlight-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    header nav {
+        position: static;
+        transform: none;
+        margin-top: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+.extras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #C19AB7;
+    gap: 1rem;
+}
+
+.extras h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: 1px solid #9C95DC;
+    color: #333;
+}
+
+.subscribe-form input[type="submit"] {
+    background-color: #9C95DC;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form input[type="submit"]:hover {
+    background-color: #7B7AB3;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #170A1C;
+    color: white;
+    text-align: center;
+}
+
+footer .social-media a {
+    margin: 0 0.5rem;
+    color: #9C95DC;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
