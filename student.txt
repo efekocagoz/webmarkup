@@ -1,0 +1,5 @@
+Student name: Efe Kodzhagioz
+Student number: 733456
+Student class: IT-1D
+GitHub Repository: https://github.com/efekocagoz/webmarkup
+GitHub Pages URL: https://efekocagoz.github.io/webmarkup/main.html
